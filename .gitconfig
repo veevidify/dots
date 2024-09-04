@@ -1,0 +1,6 @@
+[commit]
+	gpgSign = true
+[core]
+	editor = vim
+[merge]
+	ff = false
