@@ -39,6 +39,6 @@ function dotfiles() {
 	/usr/bin/git --git-dir=$HOME/devs/dots --work-tree=$HOME "$@"
 }
 function backupdot() {
-	dotfiles add -u; dotfiles commit -m "upd"; dotfiles push -u origin main;
+	dotfiles add -u; dotfiles commit -m "upd"; dotfiles push -u -f origin main;
 }
 #endregion
