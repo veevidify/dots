@@ -10,6 +10,7 @@ vim.cmd([[
 	set fillchars+=stl:\ ,stlnc:\
 	set list listchars=space:.,tab:»-,trail:.,extends:>,eol:¬
 	set cursorline
+	set shiftwidth=2
 
 	let g:ctrlp_working_path_mode = 'rw'
 ]])--

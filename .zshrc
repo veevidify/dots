@@ -26,9 +26,9 @@ export AM_GIT_ADD_SYM=''  # Git New Tracked File Symbol
 export AM_GIT_DEL_SYM=''  # Git Deleted File Symbol
 export AM_GIT_MOD_SYM=''  # Git Modified File Symbol
 export AM_GIT_NEW_SYM=''  # Git New Un-tracked File Symbol
-export PROMPT_START_TAG='󰉋  '
+export PROMPT_START_TAG='  '
+export PROMPT_END_TAG='  ›'
 export PROMPT_END_TAG_COLOR=80
-export PROMPT_END_TAG='   ›'
 export AM_GIT_UN_TRACKED_COLOR=orange
 
 # Set list of themes to load
