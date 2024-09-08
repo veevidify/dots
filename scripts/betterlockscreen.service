@@ -1,7 +1,7 @@
 # systemctl enable betterlockscreen@$(whoami)
 [Unit]
 Description=Lock the screen on resume from suspend
-Before=sleep.target suspend.target
+After=sleep.target suspend.target
 
 [Service]
 User=%i

@@ -312,6 +312,9 @@ return {
 		---@module "ibl"
 		---@type ibl.config
 		opts = {},
+	},
+	{ "junegunn/fzf",
+		build = "./install --bin"
 	}
 }
 

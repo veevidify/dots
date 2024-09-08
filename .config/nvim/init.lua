@@ -53,6 +53,7 @@ vim.api.nvim_set_keymap("i", "jk", "<esc>", ns)
 vim.keymap.set("n", "<c-P>", require('fzf-lua').files, { desc = "Open Files" })
 -- with args
 vim.keymap.set("n", "<c-G>", function() require('fzf-lua').files({ cwd = '~' }) end, { desc = "All Files" })
+-- folders
 --endregion
 
 --region - ui

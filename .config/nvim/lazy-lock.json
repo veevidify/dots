@@ -1,5 +1,6 @@
 {
   "catppuccin": { "branch": "main", "commit": "4fd72a9ab64b393c2c22b168508fd244877fec96" },
+  "fzf": { "branch": "master", "commit": "a0f28583e733c4daa776aed6ebc3a6e3b65dd8cb" },
   "fzf-lua": { "branch": "main", "commit": "db41613292b88b5306d65caf6ae8996db5498ccb" },
   "glow.nvim": { "branch": "main", "commit": "238070a686c1da3bccccf1079700eb4b5e19aea4" },
   "indent-blankline.nvim": { "branch": "master", "commit": "18603eb949eba08300799f64027af11ef922283f" },
