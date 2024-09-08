@@ -24,10 +24,14 @@ vim.opt.tabstop=2
 vim.opt.shiftwidth=2
 vim.opt.scrolloff=3
 
-vim.g.mapleader = ","
+vim.g.mapleader = " "
 vim.keymap.set("n", "<leader>n", ":noh<cr>", ns)
 
-vim.keymap.set("n", "<Space>", ":", ns)
+vim.keymap.set("n", "<Space>w", ":w", ns)
+vim.keymap.set("n", "<Space>q", ":q", ns)
+vim.keymap.set("n", "<Space>wa", ":wa", ns)
+vim.keymap.set("n", "<Space>wq", ":wq", ns)
+vim.keymap.set("n", "<Space>wqa", ":wqa", ns)
 vim.keymap.set("n", "<Backspace>", "^", ns)
 
 vim.keymap.set("n", "<leader>j", vim.cmd.split, ns)
@@ -60,7 +64,6 @@ vim.cmd.syntax "on"
 
 --region - telescope
 local builtin = require('telescope.builtin')
-vim.g.mapleader = ","
 vim.keymap.set('n', '<leader>ff', builtin.find_files, ns)
 vim.keymap.set('n', '<leader>fg', builtin.live_grep, ns)
 vim.keymap.set('n', '<leader>fb', builtin.buffers, ns)
@@ -156,7 +159,7 @@ vim.keymap.set('n', '<C-M-Right>', require('smart-splits').resize_right)
 --region - movement hinting
 local precognition = require("precognition")
 precognition.toggle()
-vim.keymap.set('n', '<M-S-H>', precognition.toggle, ns)
+vim.keymap.set('n', '<leader>h', precognition.toggle, ns)
 --endregion
 
 --region - markdown table
