@@ -26,6 +26,7 @@ vim.opt.scrolloff=3
 
 vim.g.mapleader = " "
 vim.keymap.set("n", "<leader>n", ":noh<cr>", ns)
+vim.keymap.set("n", "<leader>=", "<C-w>=<cr>", ns)
 
 vim.keymap.set("n", "<Space>w", ":w", ns)
 vim.keymap.set("n", "<Space>q", ":q", ns)
