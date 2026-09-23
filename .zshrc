@@ -196,6 +196,7 @@ source ~/scripts/workflow/function.sh
 source ~/scripts/workflow/alias.sh
 eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 export PATH="$HOME/.local/kitty.app/bin:$PATH"
+export EDITOR=vim
 
 autoload -U compinit; compinit
 

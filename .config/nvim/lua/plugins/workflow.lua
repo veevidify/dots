@@ -230,74 +230,9 @@ return {
 		config = true,
 		cmd = "Glow"
 	},
-	{ "OXY2DEV/markview.nvim",
-		lazy = false,      -- Recommended
-		-- ft = "markdown" -- If you decide to lazy-load anyway
-
-		dependencies = {
-			-- You will not need this if you installed the
-			-- parsers manually
-			-- Or if the parsers are in your $RUNTIMEPATH
-			"nvim-treesitter/nvim-treesitter",
-
-			"nvim-tree/nvim-web-devicons"
-		},
-
-		headings = {
-			enable = true,
-
-			textoff = 0,
-			shift_width = 0,
-
-			heading_1 = {
-				style = "simple",
-
-				shift_char = "",
-				padding_left = "",
-				hl = "DiagnosticOk"
-			},
-			heading_2 = {
-				padding_left = "",
-				shift_char = "",
-			},
-			heading_3 = {
-				padding_left = "",
-				shift_char = "",
-			}
-		}
-	},
 	{ 'mrjones2014/smart-splits.nvim',
 		-- to use Kitty multiplexer support, run the post install hook
 		build = './kitty/install-kittens.bash'
-	},
-	{ "tris203/precognition.nvim",
-		--event = "VeryLazy",
-		opts = {
-			startVisible = true,
-			showBlankVirtLine = true,
-			highlightColor = { link = "Comment" },
-			hints = {
-				Caret = { text = "^", prio = 2 },
-				Dollar = { text = "$", prio = 1 },
-				MatchingPair = { text = "%", prio = 5 },
-				Zero = { text = "0", prio = 1 },
-				w = { text = "w", prio = 10 },
-				b = { text = "b", prio = 9 },
-				e = { text = "e", prio = 8 },
-				W = { text = "W", prio = 7 },
-				B = { text = "B", prio = 6 },
-				E = { text = "E", prio = 5 },
-			},
-			gutterHints = {
-				G = { text = "G", prio = 10 },
-				gg = { text = "gg", prio = 9 },
-				PrevParagraph = { text = "{", prio = 8 },
-				NextParagraph = { text = "}", prio = 8 },
-			},
-			disabled_fts = {
-				"startify",
-			},
-		},
 	},
 	{ "hedyhli/markdown-toc.nvim",
 		ft = "markdown",  -- Lazy load on markdown filetype

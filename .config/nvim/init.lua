@@ -108,13 +108,6 @@ require('ufo').setup({
 })
 --endregion
 
---region - whitespace trim hook
-vim.api.nvim_create_autocmd({ "BufWritePre" }, {
-	pattern = { "*" },
-	command = [[%s/\s\+$//e]],
-})
---endregion
-
 --region - treesitter
 require'nvim-treesitter.configs'.setup {
 	-- A list of parser names, or "all" (the listed parsers MUST always be installed)
@@ -159,30 +152,8 @@ vim.keymap.set('n', '<C-M-Up>', require('smart-splits').resize_up)
 vim.keymap.set('n', '<C-M-Right>', require('smart-splits').resize_right)
 --endregion
 
---region - movement hinting
-local precognition = require("precognition")
-precognition.toggle()
-vim.keymap.set('n', '<leader>h', precognition.toggle, ns)
---endregion
-
 --region - markdown table
 require('mtoc').setup({})
---endregion
-
---region - markview nvim
-require("markview").setup({
-	modes = { "n", "no", "c" },
-
-	hybrid_modes = {},
-
-	-- This is nice to have
-	callbacks = {
-		on_enable = function (_, win)
-			vim.wo[win].conceallevel = 2;
-			vim.wo[win].concealcursor = "c";
-		end
-	}
-})
 --endregion
 
 --region -

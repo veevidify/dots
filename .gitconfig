@@ -4,3 +4,6 @@
 	editor = vim
 [merge]
 	ff = false
+[user]
+	email = vee.vidify@gmail.com
+	name = V N
