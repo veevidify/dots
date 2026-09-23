@@ -297,6 +297,7 @@ bindsym $mod+F10 workspace $ws20
 bindsym $mod+e exec rofimoji
 bindsym $mod+shift+n exec gnome-screenshot --interactive
 bindsym $mod+shift+f exec nautilus $HOME/Documents
+bindsym $mod+t exec xfce4-terminal --drop-down
 
 bindsym Ctrl+slash exec playerctl play-pause
 bindsym Ctrl+period exec playerctl next

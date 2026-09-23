@@ -61,7 +61,8 @@ vim.keymap.set("n", "<c-G>", function() require('fzf-lua').files({ cwd = '~' }) 
 --region - ui
 vim.o.background = "dark" -- or "light" for light mode
 --vim.cmd([[colorscheme gruvbox]])
-vim.cmd.colorscheme "catppuccin-mocha"
+vim.cmd.colorscheme "catppuccin-nvim"
+
 vim.cmd.syntax "on"
 --endregion
 
