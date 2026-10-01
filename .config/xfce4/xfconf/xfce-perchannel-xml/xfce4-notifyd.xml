@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<channel name="xfce4-notifyd" version="1.0">
+  <property name="expire-timeout" type="int" value="5"/>
+  <property name="theme" type="string" value="Default"/>
+  <property name="applications" type="empty">
+    <property name="known_applications" type="array">
+      <value type="string" value="firefox"/>
+      <value type="string" value="Firefox"/>
+      <value type="string" value="Guake"/>
+      <value type="string" value="IDEA"/>
+      <value type="string" value="io.snapcraft.SessionAgent"/>
+      <value type="string" value="kitty"/>
+      <value type="string" value="nm-applet"/>
+      <value type="string" value="notify-send"/>
+      <value type="string" value="org.freedesktop.network-manager-applet"/>
+      <value type="string" value="org.gnome.DejaDup"/>
+      <value type="string" value="org.gnome.Nautilus"/>
+      <value type="string" value="Spotify"/>
+      <value type="string" value="Touchpad-Indicator"/>
+      <value type="string" value="Xfce volume control"/>
+      <value type="string" value="Xfce4-notifyd settings"/>
+      <value type="string" value="xfce4-power-manager"/>
+    </property>
+  </property>
+  <property name="initial-opacity" type="double" value="0.84999999999999998"/>
+  <property name="do-slideout" type="bool" value="false"/>
+  <property name="do-not-disturb" type="bool" value="true"/>
+  <property name="log-max-size-enabled" type="bool" value="true"/>
+  <property name="show-notifications-on" type="string" value="active-monitor"/>
+  <property name="log-level" type="string" value="not-fully-shown"/>
+  <property name="log-level-apps" type="string" value="all"/>
+  <property name="notify-location" type="string" value="top-right"/>
+</channel>

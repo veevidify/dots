@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<channel name="xfce4-terminal" version="1.0">
+  <property name="dropdown-position" type="uint" value="100"/>
+  <property name="dropdown-move-to-active" type="bool" value="false"/>
+  <property name="dropdown-width" type="uint" value="50"/>
+  <property name="dropdown-height" type="uint" value="85"/>
+  <property name="dropdown-position-vertical" type="uint" value="39"/>
+  <property name="font-name" type="string" value="CommitMono Nerd Font Mono 12"/>
+  <property name="text-blink-mode" type="string" value="TERMINAL_TEXT_BLINK_MODE_NEVER"/>
+  <property name="misc-menubar-default" type="bool" value="false"/>
+  <property name="misc-borders-default" type="bool" value="false"/>
+  <property name="dropdown-keep-open-default" type="bool" value="true"/>
+  <property name="dropdown-toggle-focus" type="bool" value="false"/>
+</channel>

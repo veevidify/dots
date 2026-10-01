@@ -1,0 +1,33 @@
+[global_config]
+  focus = mouse
+  title_hide_sizetext = True
+  putty_paste_style_source_clipboard = True
+  smart_copy = False
+  clear_select_on_copy = True
+[keybindings]
+  zoom_in = <Primary>equal
+  split_horiz = <Primary><Shift>j
+  split_vert = <Primary><Shift>l
+  layout_launcher = <Shift><Alt>l
+[profiles]
+  [[default]]
+    background_color = "#282828"
+    background_darkness = 0.35
+    background_type = transparent
+    cursor_blink = False
+    cursor_color = "#aaaaaa"
+    font = CommitMono Nerd Font 12
+    foreground_color = "#ebdbb2"
+    scrollback_lines = 10000
+    use_system_font = False
+    background_image = /home/viet/Pictures/outrun.jpg
+[layouts]
+  [[default]]
+    [[[window0]]]
+      type = Window
+      parent = ""
+    [[[child1]]]
+      type = Terminal
+      parent = window0
+      profile = default
+[plugins]
