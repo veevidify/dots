@@ -1,0 +1,108 @@
+execute pathogen#infect()
+
+set clipboard+=unnamed
+
+set t_Co=256
+set fillchars+=stl:\ ,stlnc:\
+set laststatus=2
+set surround
+
+let NERDTreeShowHidden=1
+set encoding=utf8
+
+set nocompatible
+imap jk <Esc>
+
+let g:NERDTreeChDirMode       = 2
+let g:ctrlp_working_path_mode = 'rw'
+let g:Guifont="DejaVu Sans Code:h13"
+"nmap <silent> gk <C-W>k
+"nmap <silent> gj <C-W>j
+"nmap <silent> gh <C-W>h
+"nmap <silent> gl <C-W>l
+"nmap <silent> g= <C-W>=
+
+:noremap <Tab> <C-W>
+:noremap <Space> :
+
+nmap <BackSpace> ^
+
+map <F8> :NERDTree <cr>B
+map <F9> :NERDTreeToggle <cr>
+
+nmap <C-m> gcc
+vmap <C-m> gcc
+
+set tabstop=2
+set shiftwidth=2
+set number
+set autoread
+set list listchars=space:.,tab:»-,trail:.,extends:>,eol:¬
+set scrolloff=3
+
+set background=dark
+colorscheme gruvbox
+
+"au ColorScheme * hi Normal ctermbg=none guibg=none
+"au ColorScheme myspecialcolors hi Normal ctermbg=red guibg=red
+
+let g:airline_theme='base16'
+
+if !exists('g:airline_symbols')
+    let g:airline_symbols = {}
+endif
+let g:airline_powerline_fonts = 1
+
+" unicode symbols
+let g:airline_left_sep = '»'
+let g:airline_left_sep = '▶'
+let g:airline_right_sep = '«'
+let g:airline_right_sep = '◀'
+let g:airline_symbols.crypt = '🔒'
+let g:airline_symbols.linenr = '☰'
+let g:airline_symbols.linenr = '␊'
+let g:airline_symbols.linenr = '␤'
+let g:airline_symbols.linenr = '¶'
+let g:airline_symbols.maxlinenr = '㏑'
+"let g:airline_symbols.maxlinenr = 'ln'
+let g:airline_symbols.branch = '⎇'
+let g:airline_symbols.paste = 'ρ'
+let g:airline_symbols.paste = 'Þ'
+let g:airline_symbols.paste = '∥'
+let g:airline_symbols.spell = 'Ꞩ'
+let g:airline_symbols.notexists = 'Ɇ'
+let g:airline_symbols.whitespace = 'Ξ'
+
+" airline symbols
+let g:airline_left_sep = ''
+let g:airline_left_alt_sep = ''
+let g:airline_right_sep = ''
+let g:airline_right_alt_sep = ''
+let g:airline_symbols.branch = ''
+let g:airline_symbols.readonly = ''
+let g:airline_symbols.linenr = ''
+
+let g:javascript_plugin_jsdoc = 1
+
+let g:haskell_enable_quantification = 1   " to enable highlighting of `forall`
+let g:haskell_enable_recursivedo = 1      " to enable highlighting of `mdo` and `rec`
+let g:haskell_enable_arrowsyntax = 1      " to enable highlighting of `proc`
+let g:haskell_enable_pattern_synonyms = 1 " to enable highlighting of `pattern`
+let g:haskell_enable_typeroles = 1        " to enable highlighting of type roles
+let g:haskell_enable_static_pointers = 1  " to enable highlighting of `static`
+let g:haskell_backpack = 1                " to enable highlighting of backpack keywords
+
+syntax on
+filetype plugin indent on
+
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
+
+
+
