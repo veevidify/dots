@@ -10,7 +10,7 @@ dotfiles push -u origin main
 
 # new machine
 ```sh
-mkdir -p ~/devs/dots
+mkdir -p ~/devs/
 git clone --separate-git-dir=$HOME/devs/dots https://github.com/veevidify/dots.git tmpdotfiles
 rsync --recursive --verbose --exclude '.git' tmpdotfiles/ $HOME/
 rm -r tmpdotfiles
