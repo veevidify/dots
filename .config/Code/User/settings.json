@@ -328,4 +328,5 @@
   "claudeCode.preferredLocation": "panel",
   "workbench.secondarySideBar.defaultVisibility": "hidden",
   "workbench.editor.empty.hint": "hidden",
+  "terminal.integrated.initialHint": false,
 }

@@ -44,6 +44,8 @@
     <property name="plugin-6" type="string" value="systray">
       <property name="square-icons" type="bool" value="true"/>
       <property name="known-items" type="array">
+        <value type="string" value="discord_status_icon_1"/>
+        <value type="string" value="un-reboot"/>
         <value type="string" value="NordVPN"/>
         <value type="string" value="chrome_status_icon_1"/>
         <value type="string" value="software-update-available"/>
@@ -56,6 +58,7 @@
         <value type="string" value="nm-applet"/>
       </property>
       <property name="known-legacy-items" type="array">
+        <value type="string" value="drop-down terminal"/>
         <value type="string" value="xfce terminal"/>
         <value type="string" value="network"/>
         <value type="string" value="touchpad-indicator"/>
